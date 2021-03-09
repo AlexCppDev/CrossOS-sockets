@@ -140,16 +140,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="http.cpp" />
     <ClCompile Include="Net.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Net.h" />
-    <ClInclude Include="Http.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

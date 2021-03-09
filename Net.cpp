@@ -1,4 +1,5 @@
 							//*** Creating crossplaform TCP connection lib ***//
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #ifdef __linux__  // arpa 
 		#include <unistd.h>
 		#include <arpa/inet.h>
@@ -134,7 +135,7 @@ static size_t _parse_address(char* address, char* ipv4, char* port);
 			ipv4[i] = address[i];
 		}
 		ipv4[i] = '\0';
-		for (; address[i] != '\0'; ++i, ++j)
+		for (i+= 1; address[i] != '\0'; ++i, ++j)
 		{
 			if (j >= 5)
 			{
